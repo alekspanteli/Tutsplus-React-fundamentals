@@ -4,7 +4,7 @@ const App = () => {
   return (
     <>
         <Navbar title="Lots of components" />
-        <div class="bg-dark">Hello World</div>
+        <div class="container">Hello World</div>
     </>
   );
 };
