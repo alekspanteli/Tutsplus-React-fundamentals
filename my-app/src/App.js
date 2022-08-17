@@ -6,7 +6,6 @@ const App = () => {
   let guitars = ['Alex', 'John', 'David'];
 
 
-
   return (
     <>
         <Navbar title="Lots of components" />
@@ -14,6 +13,7 @@ const App = () => {
           <List
             title="Guitars"
             items={guitars}
+            background='danger'
           />
         </div>
     </>
