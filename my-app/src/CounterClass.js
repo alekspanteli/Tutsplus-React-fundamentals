@@ -12,6 +12,9 @@ class Counter extends Component {
     this.state = {
       counter: props.startAt,
     };
+
+    this.CountUp = this.CountUp.bind(this);
+    this.CountDown = this.CountDown.bind(this);
   }
 
   CountUp(e) {
@@ -30,8 +33,8 @@ class Counter extends Component {
         <p>Count By: {this.props.countBy}</p>
         <h4>{this.state.counter}</h4>
         <div className="d-flex gap-1">
-          <button className="btn btn-primary" onClick={() => this.CountUp()}>Count Up</button>
-          <button className="btn btn-danger" onClick={() => this.CountDown()}>Count Down</button>
+          <button className="btn btn-primary" onClick={this.CountUp}>Count Up</button>
+          <button className="btn btn-danger" onClick={this.CountDown}>Count Down</button>
         </div>
       </>
     );
