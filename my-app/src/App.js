@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
-import List from './List'
+import List from './ListClass'
 import Counter from './CounterClass'
 
 const App = () => {
@@ -11,12 +11,12 @@ const App = () => {
     <>
         <Navbar title="Getting Started With State" />
         <div className="container">
-          {/* <List
+          <List
             title="Guitars"
             items={guitars}
             background='danger'
-          /> */}
-          <Counter />
+          />
+          {/* <Counter /> */}
         </div>
     </>
   );
